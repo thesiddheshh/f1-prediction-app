@@ -19,10 +19,15 @@ from datetime import datetime
 # ----------------------------
 # Configuration
 # ----------------------------
-CACHE_DIR = "C:/Users/siddh/OneDrive/Desktop/UNIVERSITY/f1-predictor/f1_cache"
-MODEL_DIR = "models"
-PREDICTION_DIR = "predictions"
-WEATHER_API_KEY = "ad088f9bbef7fc4b0ebfea6ed606fec2"
+# Use /tmp for cache and model directories on Streamlit Cloud
+CACHE_DIR = "/tmp/f1_cache"
+MODEL_DIR = "/tmp/models"
+PREDICTION_DIR = "/tmp/predictions"
+
+os.makedirs(CACHE_DIR, exist_ok=True)
+os.makedirs(MODEL_DIR, exist_ok=True)
+os.makedirs(PREDICTION_DIR, exist_ok=True)
+
 fastf1.Cache.enable_cache(CACHE_DIR)
 
 # ----------------------------
@@ -345,7 +350,7 @@ if "last_run" not in st.session_state:
 
 if time.time() - st.session_state.last_run > 3600:  # Refresh every hour
     st.session_state.last_run = time.time()
-    st.experimental_rerun()
+    st.rerun()
 
 # Run Predictions
 laps_data = load_race_data(2024, st.session_state.event_id)
