@@ -19,14 +19,14 @@ from datetime import datetime
 # ----------------------------
 # Configuration
 # ----------------------------
-# Use /tmp for cache and model directories on Streamlit Cloud
-CACHE_DIR = "/tmp/f1_cache"
-MODEL_DIR = "/tmp/models"
-PREDICTION_DIR = "/tmp/predictions"
+CACHE_DIR = "C:/Users/siddh/OneDrive/Desktop/UNIVERSITY/f1-predictor/f1_cache"
+MODEL_DIR = "models"
+PREDICTION_DIR = "predictions"
+try:
+    WEATHER_API_KEY = st.secrets["weather"]["api_key"]
+except:
+    WEATHER_API_KEY = os.getenv("WEATHER_API_KEY", "")
 
-os.makedirs(CACHE_DIR, exist_ok=True)
-os.makedirs(MODEL_DIR, exist_ok=True)
-os.makedirs(PREDICTION_DIR, exist_ok=True)
 
 fastf1.Cache.enable_cache(CACHE_DIR)
 
