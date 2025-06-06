@@ -9,19 +9,32 @@ from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
 from sklearn.impute import SimpleImputer
-import fastf1
 import os
 import joblib
 import requests
 import time
 from datetime import datetime
+import fastf1 
 
 # ----------------------------
 # Configuration
 # ----------------------------
-CACHE_DIR = "C:/Users/siddh/OneDrive/Desktop/UNIVERSITY/f1-predictor/f1_cache"
-MODEL_DIR = "models"
-PREDICTION_DIR = "predictions"
+import os
+
+# Use /tmp for cache and model directories on Streamlit Cloud
+CACHE_DIR = "/tmp/f1_cache"
+MODEL_DIR = "/tmp/models"
+PREDICTION_DIR = "/tmp/predictions"
+
+# Create directories if they don't exist
+os.makedirs(CACHE_DIR, exist_ok=True)
+os.makedirs(MODEL_DIR, exist_ok=True)
+os.makedirs(PREDICTION_DIR, exist_ok=True)
+
+# Enable FastF1 cache
+import fastf1
+fastf1.Cache.enable_cache(CACHE_DIR)
+
 try:
     WEATHER_API_KEY = st.secrets["weather"]["api_key"]
 except:
