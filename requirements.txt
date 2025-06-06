@@ -2,7 +2,8 @@ streamlit
 pandas
 numpy
 matplotlib
+seaborn
 scikit-learn
-joblib
 fastf1
+joblib
 requests
