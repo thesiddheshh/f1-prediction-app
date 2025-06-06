@@ -1,4 +1,4 @@
-# F1 Race Predictor 🏁
+# DRS Diva: F1 Race Predictor 🏁
 
 A data-driven Formula 1 race outcome predictor using FastF1, machine learning models, weather integration, and real-world racing insights.
 
