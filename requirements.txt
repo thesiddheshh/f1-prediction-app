@@ -1,9 +1,9 @@
 streamlit
-pandas
-numpy
+fastf1
 matplotlib
 seaborn
 scikit-learn
-fastf1
-joblib
+pandas
+numpy
 requests
+joblib
