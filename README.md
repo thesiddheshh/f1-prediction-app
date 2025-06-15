@@ -226,7 +226,7 @@ This project is licensed under the **MIT License**. See [LICENSE](./LICENSE) for
 **Developer:** Siddh Wagawad  
 **GitHub:** [@thesiddheshh](https://github.com/thesiddheshh)  
 **Instagram:** [@thesiddheshh](https://instagram.com/thesiddheshh)  
-**Email:** *[add yours if you'd like]*
+**Email:** *[siddhwagawad@gmail.com]*
 
 ---
 
