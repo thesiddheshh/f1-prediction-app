@@ -12,6 +12,7 @@ This project forecasts podium finishes and driver points using clean air pace, q
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
+- [2025 Race Predictions vs Actuals](#race-predictions-vs-actuals)
 - [Installation](#installation)
 - [Running the App](#running-the-app)
 - [Deployment on Streamlit Cloud](#deployment-on-streamlit-cloud)
@@ -93,6 +94,46 @@ f1-race-predictor/
 │
 └── assets/                       # Icons, logos, or branding (optional)
 ```
+
+---
+
+### 📊 2025 Race Predictions vs Actuals
+
+Race Weekend       | Predicted Top 3      | Actual Top 3         | Top‑3 Accuracy
+-------------------|----------------------|-----------------------|----------------
+Bahrain GP         | VER, LEC, HAM        | PIA, RUS, NOR         | ✅ 1/3 (33%)
+Saudi GP           | VER, LEC, PIA        | PIA, VER, LEC         | ✅ 3/3 (100%)
+Australian GP      | LEC, RUS, NOR        | NOR, VER, RUS         | ✅ 2/3 (66%)
+Japanese GP        | VER, LEC, NOR        | VER, NOR, PIA         | ✅ 2/3 (66%)
+Chinese GP         | —                    | PIA, NOR, RUS         | —
+Miami GP           | —                    | PIA, NOR, VER         | —
+Emilia-Romagna GP  | VER, LEC, PIA        | VER, NOR, PIA         | ✅ 2/3 (66%)
+Monaco GP          | LEC, NOR, PIA        | LEC, NOR, PIA         | ✅ 3/3 (100%)
+Canadian GP        | HAM, VER, RUS        | RUS, VER, ANTONELLI   | ✅ 2/3 (66%)
+Spanish GP         | VER, HAM, LEC        | PIA, NOR, LEC         | ✅ 1/3 (33%)
+Austrian GP        |                      | —                     | —
+British GP         | HAM, VER, NOR        | —                     | —
+Hungarian GP       | PIA, NOR, HAM        | —                     | —
+Belgian GP         | RUS, PIA, HAM        | —                     | —
+Dutch GP           | LEC, VER, PIA        | —                     | —
+Italian GP         | LEC, NOR, PIA        | —                     | —
+Azerbaijan GP      | PIA, LEC, VER        | —                     | —
+Singapore GP       | VER, PIA, LEC        | —                     | —
+US GP (Austin)     |                      | —                     | —
+Mexico GP          | LEC, PIA, RUS        | —                     | —
+Brazilian GP       |                      | —                     | —
+Las Vegas GP       | RUS, HAM, LEC        | —                     | —
+Qatar GP           |                      | —                     | —
+Abu Dhabi GP       | LEC, SAI, RUS        | —                     | —
+
+---
+
+---
+
+### 🚀 Try DRS Diva Now
+
+Live race predictor and simulation dashboard:  
+🔗 [**drs-diva.streamlit.app**](https://drs-diva.streamlit.app)
 
 ---
 
