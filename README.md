@@ -12,7 +12,7 @@ This project forecasts podium finishes and driver points using clean air pace, q
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
-- [2025 Race Predictions vs Actuals](#race-predictions-vs-actuals)
+- [2025 Race Predictions vs Actuals](#-📊-2025-race-predictions-vs-actuals)
 - [Installation](#installation)
 - [Running the App](#running-the-app)
 - [Deployment on Streamlit Cloud](#deployment-on-streamlit-cloud)
@@ -105,8 +105,8 @@ Bahrain GP         | VER, LEC, HAM        | PIA, RUS, NOR         | ✅ 1/3 (33%
 Saudi GP           | VER, LEC, PIA        | PIA, VER, LEC         | ✅ 3/3 (100%)
 Australian GP      | LEC, RUS, NOR        | NOR, VER, RUS         | ✅ 2/3 (66%)
 Japanese GP        | VER, LEC, NOR        | VER, NOR, PIA         | ✅ 2/3 (66%)
-Chinese GP         | —                    | PIA, NOR, RUS         | —
-Miami GP           | —                    | PIA, NOR, VER         | —
+Chinese GP         | PIA, NOR, RUS        | PIA, NOR, RUS         | ✅ 3/3 (100%)
+Miami GP           | VER, PIA, NOR        | PIA, NOR, VER         | ✅ 3/3 (100%)
 Emilia-Romagna GP  | VER, LEC, PIA        | VER, NOR, PIA         | ✅ 2/3 (66%)
 Monaco GP          | LEC, NOR, PIA        | LEC, NOR, PIA         | ✅ 3/3 (100%)
 Canadian GP        | HAM, VER, RUS        | RUS, VER, ANTONELLI   | ✅ 2/3 (66%)
